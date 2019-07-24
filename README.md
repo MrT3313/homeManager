@@ -88,3 +88,25 @@ Accepted Shape of Front End API call:
 }
 ```
 
+### Login
+
+Functionality:
+- pw verification
+- serves front end a JWT with payload:
+    ```
+    {
+        userID: INTEGER,
+        userName: 'STRING'
+    }
+    ```
+
+```
+Accepted Shape of Front End API call:
+{
+    userName: "STRING",
+    pw: "STRING",
+}
+```
+
+
+

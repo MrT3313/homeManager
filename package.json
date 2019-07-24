@@ -1,0 +1,26 @@
+{
+  "name": "homemanager",
+  "version": "0.0.1",
+  "description": "Your one stop shop as a property owner to expense, monitor, maintain, and manage your properties",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrT3313/homeManager.git"
+  },
+  "author": "Reed Turgeon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MrT3313/homeManager/issues"
+  },
+  "homepage": "https://github.com/MrT3313/homeManager#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}

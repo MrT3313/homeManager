@@ -8,11 +8,13 @@
     const router = express.Router()
     
 // MIDDLEWARE 
-    // const pwHash = require('../../middleware/pwHash.js')
+    const pwHash = require('../../middleware/pwHash.js')
 
 // - GET - //
     router.get('/', async(req, res) => {
         console.log('registerRoute GET/')
+
+
         res.status(200).json({ message: 'GET/ --> in registerRouter'})
     })
 
@@ -27,9 +29,19 @@
             "jobCategory": INTEGER,
         }
     */ 
-    router.post('/', async(req,res) => {
+    router.post('/', pwHash, async(req,res) => {
         console.log('registerRouter post/')
-        res.status(200).json( {message: 'fill me in'} )
+        console.log('newUser post:pdHash',req.body)
+
+        DB_KNEX('USERS')
+            .insert(req.body)
+            .then( (results) => {
+                console.log(results)
+                res.status(201).json( 'Successful Registration' )
+            })
+            .catch( err => {
+                res.status(422).json( {error: 'Unable to register new user'})
+            })
     })
 
 // EXPORTS

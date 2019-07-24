@@ -2,6 +2,8 @@ const bcrypt = require('bcryptjs')
 
 function pwHash( req, res, next ) {
     console.log('pwHash Middleware')
+    const newUser = req.body
+
 
     if (newUser) {
         const hash = bcrypt.hashSync(newUser.pw, 14)

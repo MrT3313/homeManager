@@ -40,6 +40,29 @@ Welcome to Home Manager
 
 # BE
 
+## Routes
+
+### Register New User
+
+Functionality: 
+- All passwords are hashed upon registrations
+
+Future Functionality: 
+- Set input restrictions on user's pw entry
+- Use Third Party Auth Service
+
+```
+Accepted Shape of Front End API call:
+{
+    lastName: "STRING",
+    firstName: "STRING",
+    userName: "STRING",
+    pw: "STRING",
+    adminCat: 1,
+    jobCat: 1
+}
+```
+
 
 
 

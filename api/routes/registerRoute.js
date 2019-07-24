@@ -25,13 +25,13 @@
             "lastName": "STRING",
             "userName": "STRING",
             "pw": "STRING",
-            "adminCategory": INTEGER,
-            "jobCategory": INTEGER,
+            "adminCat": INTEGER,
+            "jobCat": INTEGER,
         }
     */ 
     router.post('/', pwHash, async(req,res) => {
         console.log('registerRouter post/')
-        console.log('newUser post:pdHash',req.body)
+        console.log('newUser post:pwHash',req.body)
 
         DB_KNEX('USERS')
             .insert(req.body)

@@ -30,6 +30,14 @@ Welcome to Home Manager
 
 # FE 
 
+- [Overview](#Overview)
+- [KeyFeatures](#KeyFeatures)
+- [FE](#FE)
+    - [Typography](#Typography)
+    - [Colors](#Colors)
+    - [Logo](#Logo)
+- [BE](#BE)
+
 ## Typography
 
 ## Colors
@@ -40,12 +48,29 @@ Welcome to Home Manager
 
 # BE
 
+- [Overview](#Overview)
+- [KeyFeatures](#KeyFeatures)
+- [FE](#FE)
+- [BE](#BE)
+    - [User Profiles](#UserProfiles)
+    - [Routes](#Routes)
+
+## UserProfiles:
+    StakeholderTree
+    - Property Owner (everything)(mainAdmin)
+    - Landlord (bills)(admin)
+
+    Beneficiaries
+    - Property Manager (maintenance)
+    - Tenant(s)
+    - Service (third party repair)
+
 ## Routes
 
 ### Register New User
 
 Functionality: 
-- All passwords are hashed upon registrations
+- All passwords are hashed upon registration
 
 Future Functionality: 
 - Set input restrictions on user's pw entry
@@ -66,12 +91,4 @@ Accepted Shape of Front End API call:
 
 
 
-## User Profiles:
-    StakeholderTree
-    - Property Owner (everything)(mainAdmin)
-    - Landlord (bills)(admin)
 
-    Beneficiaries
-    - Property Manager (maintenance)
-    - Tenant(s)
-    - Service (third party repair)

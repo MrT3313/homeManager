@@ -1,5 +1,5 @@
 // Dot ENV
-// require('dotenv').config()
+require('dotenv').config()
 
 // EXPRESS SERVER
     const express = require('express')

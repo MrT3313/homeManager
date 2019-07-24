@@ -88,7 +88,3 @@ Accepted Shape of Front End API call:
 }
 ```
 
-
-
-
-

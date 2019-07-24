@@ -1,5 +1,5 @@
 // Dot ENV
-// require('dotenv').config()
+require('dotenv').config()
 
 // EXPRESS SERVER
     const express = require('express')
@@ -12,7 +12,7 @@
     // const cors = require('cors')
     
 // IMPORT ROUTES
-    //const routes = require('./routes/index.js')
+    const routes = require('./routes/index.js')
     
 // USE MIDDLEWARE
     server.use(
@@ -22,7 +22,7 @@
     )
 
 // USE ROUTES
-    //server.use('/', routes)
+    server.use('/', routes)
 
 // Root Route
     server.get('/', (req,res) => {

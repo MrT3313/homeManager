@@ -1,11 +1,11 @@
-// const dbConnection = process.env.DATABASE_URL
+const dbConnection = process.env.DATABASE_URL
 
 module.exports = {
 
     development: {
         client: 'sqlite3',
         connection: {
-        filename: './data/luncher_DB.sqlite3'
+        filename: './data/homeManager.sqlite3'
         },
         useNullAsDefault: true,
         migrations: {
@@ -15,5 +15,16 @@ module.exports = {
         directory: './data/seeds'
         }
     },
+
+    production: {
+        client: 'pg',
+        connection: dbConnection,
+        migrations: {
+            directory: './data/migrations'
+        },
+        seeds: {
+            directory: './data/seeds'
+        }
+    }
 
 }

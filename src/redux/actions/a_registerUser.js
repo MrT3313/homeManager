@@ -18,7 +18,8 @@ import axios from "axios";
             // START AXIOS CALL
             axios
                 .post(
-                    'http://localhost:1313/register',
+                    // 'http://localhost:1313/register',
+                    'https://home-manager-backend.herokuapp.com/register',
                     registerInfo
                 )
                 .then( res => {

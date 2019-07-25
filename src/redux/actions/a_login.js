@@ -17,7 +17,8 @@ import axios from 'axios'
             // START AXIOS CALL
             axios
                 .post(
-                    'http://localhost:1313/login',
+                    // 'http://localhost:1313/login',
+                    'https://home-manager-backend.herokuapp.com/login',
                     loginInfo
                 )
                 .then( res => {

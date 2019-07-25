@@ -8,16 +8,18 @@ import { Link } from 'react-router-dom'
 class LandingPage extends Component {
     render() {
         return (
-            <div className="App">
-                <h1>Landing Page</h1>
-                <Link to="/">Landing Page</Link>
-                <br />
+            <div className="Container">
+                <div className="DummyNav">
+                    <h1>Landing Page</h1>
+                    <Link to="/">Landing Page</Link>
+                    <br />
 
-                <Link to="/login">Login Page</Link>
-                <br />
+                    <Link to="/login">Login Page</Link>
+                    <br />
 
-                <Link to="/register">Register Page</Link>
-                <br />
+                    <Link to="/register">Register Page</Link>
+                    <br />
+                </div>
             </div>
         );
     }

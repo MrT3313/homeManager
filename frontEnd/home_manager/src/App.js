@@ -6,9 +6,9 @@
 
 // COMPONENTS
   import PrivateRoute from './components/PrivateRoute.js'
-import LandingPage from "./views/LandingPage.js";
-import LoginPage from "./views/Login.js";
-import RegisterPage from "./views/Register.js";
+  import LandingPage from "./views/LandingPage.js";
+  import LoginPage from "./views/Login.js";
+  import RegisterPage from "./views/Register.js";
 
 // -- *** -- START CODE -- *** -- //
 // -- *** -- START CODE -- *** -- //

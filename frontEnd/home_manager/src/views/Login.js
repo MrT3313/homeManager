@@ -1,6 +1,10 @@
 // REACT 
 import React, { Component } from "react";
 import { Link } from 'react-router-dom'
+import { connect } from "react-redux";
+
+// IMPORT ACTION CREATORS
+    import { login } from '../redux/actions/a_login.js'
 
 // -- *** -- START CODE -- *** -- //
 // -- *** -- START CODE -- *** -- //
@@ -57,8 +61,25 @@ class LoginPage extends Component {
     }
     
     registerSubmit = e => {
+        e.preventDefault();
+        console.log('this.state', this.state)
+        this.props.login(this.state)
+    }
+}
+
+//  MAP STATE TO PROPS
+const mapStateToProps = state => {
+    return {
 
     }
 }
 
-export default LoginPage;
+// CONNECT
+export default connect(
+    mapStateToProps,
+    {
+        login
+    }
+)(LoginPage)
+
+// export default LoginPage;

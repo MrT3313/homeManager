@@ -12,7 +12,7 @@ import { BrowserRouter as Router } from "react-router-dom";
     import { compose } from 'redux'
 
 // REDUCERS 
-    import { rootReducer } from './reducers/index'
+    import { rootReducer } from './redux/reducers/index'
 
 // COMPONENTS
     import App from './App';

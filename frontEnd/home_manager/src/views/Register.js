@@ -1,6 +1,10 @@
 // REACT 
 import React, { Component } from "react";
 import { Link } from 'react-router-dom'
+import { connect } from "react-redux";
+
+// IMPORT ACTION CREATORS
+    import { registerUser } from '../redux/actions/a_registerUser.js'
 
 // -- *** -- START CODE -- *** -- //
 // -- *** -- START CODE -- *** -- //
@@ -31,7 +35,7 @@ class RegisterPage extends Component {
                 </div>
 
                 <div className='registerForm'>
-                    <form onSubmit={this.registerSubmit}>
+                    <form  onSubmit={this.registerSubmit}>
                         <input
                             id='firstName'
                             type='text'
@@ -72,8 +76,25 @@ class RegisterPage extends Component {
 
 
     registerSubmit = e => {
+        e.preventDefault();
+        console.log('this.state', this.state)
+        this.props.registerUser(this.state)
+    }
+}
+
+// MAP STATE TO PROPS
+const mapStateToProps = state => {
+    return {
 
     }
 }
 
-export default RegisterPage;
+// CONNECT 
+export default connect(
+    mapStateToProps,
+    {
+        registerUser
+    }
+)(RegisterPage)
+
+// export default RegisterPage;

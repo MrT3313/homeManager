@@ -2,8 +2,8 @@
     import { combineReducers } from 'redux'
 
 // REDUCERS
-    // import { users_reducer } from './r_users'
+    import { register_reducer } from './r_register.js'
 
 export const rootReducer = combineReducers({
-    
+    register_reducer
 })

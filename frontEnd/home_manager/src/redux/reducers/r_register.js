@@ -2,17 +2,19 @@
     import {
         REGISTER_START,
         REGISTER_SUCCESS,
-        REGISTER_FAILURE,
-    } from '../actions/a_registerUser.js/index.js'
+        REGISTER_FAILURE
+    } from '../actions/a_registerUser.js'
 
 // INITIAL STATE
     const initialState = {
         is_Registering: false,
-        error: ''
+        error: '',
+        
+        result: undefined
     }
 
 // REDUCER
-    export const login_reducer = (state = initialState, action) => {
+    export const register_reducer = (state = initialState, action) => {
         switch( action.type ) {
             case REGISTER_START:
                 return {
@@ -22,12 +24,12 @@
                     error: ''
                 }
             case REGISTER_SUCCESS:
-                    return {
-                        ...state, 
+                return {
+                    ...state, 
 
-                        is_Registering: false,
-                        error: ''
-                    }
+                    is_Registering: false,
+                    error: ''
+                }
             case REGISTER_FAILURE:
                 return {
                     ...state,

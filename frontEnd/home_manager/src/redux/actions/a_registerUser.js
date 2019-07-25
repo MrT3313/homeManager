@@ -1,3 +1,6 @@
+// AXIOS
+    import axios from "axios";
+
 // CREATE ACTION TYPES
     export const REGISTER_START = 'REGISTER_START'
     export const REGISTER_SUCCESS = 'REGISTER_SUCCESS'
@@ -6,6 +9,7 @@
 // ACTION CREATOR
     export const registerUser = registerInfo => {
         console.log('inside registerUser action creator')
+        console.log('registerInfo', registerInfo)
 
         // SEND FIRST ACTION
         return dispatch => {
@@ -14,13 +18,11 @@
             // START AXIOS CALL
             axios
                 .post(
-                    'http://localHost:1313',
+                    'http://localhost:1313/register',
                     registerInfo
                 )
                 .then( res => {
                     console.log('res', res )
-                    
-
                     // DISPATCH
                     dispatch({
                         type: REGISTER_SUCCESS,
@@ -30,13 +32,12 @@
                     })
                 })
                 .catch( err => {
+                    console.log('err', err )
                     // DISPATCH
                     dispatch({
                         type: REGISTER_FAILURE,
                         payload: err
                     })
                 })
-            
         }
-
     }

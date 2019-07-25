@@ -30,34 +30,18 @@ Welcome to Home Manager
 - maintenance admin ticket tracking & expensing
 - project planning & tracking 
 
-# FE 
-
-- [Webflow Design](https://preview.webflow.com/preview/homemanager?utm_medium=preview_link&utm_source=designer&utm_content=homemanager&preview=e2c673f790e4f30e9a08f685c5ceb009&mode=preview)
-
-- [Overview](#Overview)
-- [KeyFeatures](#KeyFeatures)
-- [FE](#FE)
-    - [Typography](#Typography)
-    - [Colors](#Colors)
-    - [Logo](#Logo)
-- [BE](#BE)
-
-## Typography
-
-## Colors
-
-## Logo
-
-
 
 # BE
 
 - [Overview](#Overview)
 - [KeyFeatures](#KeyFeatures)
-- [FE](#FE)
 - [BE](#BE)
+    - [Heroku](#Heroku)
     - [User Profiles](#UserProfiles)
     - [Routes](#Routes)
+
+## Heroku
+    https://home-manager-backend.herokuapp.com/
 
 ## UserProfiles:
     StakeholderTree

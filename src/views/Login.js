@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import { connect } from "react-redux";
 
 // IMPORT ACTION CREATORS
-    import { login } from '../redux/actions/a_login.js'
+    import { login } from '../redux/actions/a_login'
 
 // -- *** -- START CODE -- *** -- //
 // -- *** -- START CODE -- *** -- //

@@ -1,3 +1,5 @@
+-- INITIAL COMMIT TO FRONT END BRANCH 
+
 # homeManager
 Welcome to Home Manager
 

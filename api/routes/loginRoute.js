@@ -35,7 +35,7 @@ const secrets = require('../../secrets.js')
         const { userName , pw } = req.body
         console.log('userName, pw', userName, pw)
 
-        DB_KNEX('USERS').where('userName', userName ).first()
+        DB_KNEX('users').where('userName', userName ).first()
             .then( user => {
                 console.log('user', user )
 

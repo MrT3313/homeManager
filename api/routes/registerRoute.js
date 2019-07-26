@@ -33,9 +33,9 @@
         console.log('registerRouter post/')
         console.log('newUser post:pwHash',req.body)
 
-        DB_KNEX('USERS')
+        DB_KNEX('users')
             .insert(req.body)
-            .then( (results) => {
+            .then( results => {
                 console.log(results)
                 res.status(201).json( 'Successful Registration' )
             })

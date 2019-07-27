@@ -1,3 +1,9 @@
+
+In order to separate deveopment & hosting this project has been moved to:
+https://github.com/homemanager-app
+
+-----------
+
 # homeManager
 Welcome to Home Manager
 
